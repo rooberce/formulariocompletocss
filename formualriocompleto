@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+           table{
+               color: #FFF0EA;
+           }
+           .tr1{
+               background-color: #FFFFAA;
+           }
+           .encabezado{
+               color: red;
+           }
+           td{
+               background-color: #00CCFF;
+               color: black;
+           }
+        </style>
+    </head>
+    <body>
+        <form method="POST" action="http://formadorestic.com/alumnosasir2/procesaformulario_usuario.php">
+            <table border="1">
+                <tr class="tr1">
+                    <th class="encabezado" colspan="2">User Form</th>
+                </tr>
+                <tr>
+                    <td> 
+                        <label for="nombre">Enter Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="nombre" id="nombre">
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <label for="pwd">Enter Password</label>
+                    </td>
+                    <td>
+                        <input type="password" id="pwd" name="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address"> Enter Address</label>
+                    </td>
+                    <td>
+                        <textarea name="direccion" id="address" rows="4" cols="30" ></textarea>
+                    </td>
+                </tr>
+                <tr><td>
+                        Select game
+                    </td>
+                    <td>
+                        <input type="checkbox" id="football" name="deportes[]" value="Football">
+                        <label for="football">Football</label>
+                        <br>
+                        <input type="checkbox" id="badminton" name="deportes[]"value="Badminton">
+                        <label for="badminton">Badminton</label>
+                        <br>
+                        <input type="checkbox" id="cricket" name="deportes[]" value="Cricket">
+                        <label for="cricket">cricket</label>
+                        <br>
+                        <input type="checkbox" id="volleyball" name="deportes[]" value="Volleyball">
+                        <label for="volleyball">Volleyball</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" id="male" value="hombre" name="sexo">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" value="mujer" name="sexo">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="edades">Select your age</label> </td>
+                    <td>
+                        <select name="edad" id="edades">
+                            <option value="0">Seleccione su edad</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="mayor que 19">mayor 19</option>
+                        </select>
+                    </td>
+                <tr>
+                    <td colspan="2">
+                        <input type="file" id="archivo"> 
+                    </td>   
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input class="boton" type="button" value="Click Me"> <input class="boton" type="reset" value="Restablecer"> <input type="submit" class="submit" value="Submit Form">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
+
